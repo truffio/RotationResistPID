@@ -26,7 +26,7 @@ it down facing in a new position. */
 // This is the maximum speed the motors will be allowed to turn.
 // A maxSpeed of 400 lets the motors go at top speed.  Decrease
 // this value to impose a speed limit.
-const int16_t maxSpeed = 300;
+const int16_t maxSpeed = 350;
 const float   kp = 56;
 const float   ki = 0.;
 const float   kd = 1/20;
