@@ -77,7 +77,8 @@ void loop()
     
   //int32_t turnSpeed = -(int32_t)turnAngle/turnAngle1 * kp - turnRate* kd;
 
-  if(x > 0 && x % 10 == 0){
+
+  //if(x > 0 && x % 10 == 0){
 
   /*
     //Serial.print("turnAngle=");
@@ -115,9 +116,9 @@ void loop()
     Serial.print(turnAngle);
     Serial.print(",");*/
     
-    x = 0;
-  }
-  x++;
+    //x = 0;
+  //}
+  //x++;
 
 
   // Constrain our motor speeds to be between
