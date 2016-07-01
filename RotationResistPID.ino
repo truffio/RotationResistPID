@@ -68,10 +68,10 @@ void loop()
   // constant of 56 and a derivative constant of 1/20.
 
   // This is thte original line
-  //int32_t turnSpeed = -(int32_t)turnAngle / (turnAngle1 / 56) - turnRate / 20;
+  int32_t turnSpeed = -(int32_t)turnAngle / (turnAngle1 / 56) - turnRate / 20;
 
-  int32_t tA = (int32_t)turnAngle;
-  int32_t turnSpeed = -tA * 56 / (turnAngle1);// - turnRate / 20;
+  //int32_t tA = (int32_t)turnAngle;
+  //int32_t turnSpeed = -tA * 56 / (turnAngle1);// - turnRate / 20;
   //int32_t turnSpeed = -(int32_t)tA / (turnAngle1 / 56) - turnRate / 20;
   //  int32_t turnSpeed = -(int32_t)turnAngle * 56 / (turnAngle1) - (int16_t)(kd * turnRate);
     
@@ -89,7 +89,7 @@ void loop()
     Serial.print(",");
     Serial.println(turnSpeed);
     */
-    Serial.print(turnAngle);
+    /*Serial.print(turnAngle);
     Serial.print(",");
     Serial.print((int32_t)turnAngle);
     Serial.print(",");
@@ -98,6 +98,7 @@ void loop()
     Serial.print(tA*56/turnAngle1);
     Serial.print(",");
     Serial.println(tA/(turnAngle1/56));
+    */
     /*Serial.print(",");
     Serial.print(turnAngle);
     Serial.print(",");
